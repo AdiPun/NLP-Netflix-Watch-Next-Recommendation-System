@@ -1,20 +1,22 @@
-# finalCapstone
-# Netflix watch next reccomendation system
+# Natural Language Processing: Netflix Watch Next Recommendation System
 
 ## Objective
-Create a program that compares simarlity of a movie description with a list of other movies' to output a 'recomendation'
-based on how similar the movie descriptions are.
-Using spaCy, a natural language processing library and the more advanced language model: en_core_web_md.
+The objective of this project is to create a program that compares the similarity of a movie description with a list of other movies and provides recommendations based on the similarity of their descriptions. The program utilises spaCy, a natural language processing library, along with the en_core_web_md language model.
 
-## Installations
-You will need to install and import spaCy into your python library, type the command below into your terminal
+## Installation
+To use this program, you need to install and import spaCy into your Python library. Run the following command in your terminal:
+```
 pip3 install spacy
-and download the english language model:
+```
+Additionally, you need to download the English language model by running the command:
+```
 python -m spacy download en_core_web_md
+```
 
-## How to use
-Run the programme and it'll output "Since you watched Planet Hulk we think you might like Movie C"
-To try your own comparisions, change the watched_movie_description for your own movie, then change up the descriptions in the movies.txt file
+## How to Use
+To use the program, simply run it, and it will output a recommendation based on the similarity of the movie descriptions. For example, it may output "Since you watched Planet Hulk, we think you might like Movie C." 
+
+If you want to try your own comparisons, you can change the `watched_movie_description` variable to the description of your own movie. Additionally, you can modify the descriptions in the `movies.txt` file to customise the movie list.
 
 ## Limitations
-This programme will only give a score based on how similar the text content is, it doesn't know any other info such as genre or age rating.
+It's important to note that this program only provides a similarity score based on the text content of the movie descriptions. It doesn't take into account other factors such as genre or age rating when generating recommendations.
